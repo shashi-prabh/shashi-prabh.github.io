@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+.card {
+    @apply p-4 bg-white shadow rounded;
+  }
+.pagetitle {
+    @apply  text-blue-700 font-sans py-2 px-4 text-xl;
+}
+
+.headertext {
+  @apply  font-semibold text-blue-700 font-sans py-2;
+}
+
+.headertext2 {
+  @apply  font-normal text-blue-700 font-sans py-2;
+}
+
+.textbox {
+  @apply text-gray-900 font-sans px-4 py-2 m-1 shadow bg-white rounded;
+}
+.photo {
+  @apply rounded-md shadow;
+}
+a {
+  @apply text-teal-500 hover:text-blue-500
+}
+ul {
+  @apply list-disc list-outside ml-8
+}
+
+dt {
+  @apply text-gray-700 font-semibold
+}
+
+dd {
+  @apply ml-8 
+}
+
+@tailwind utilities;
+
