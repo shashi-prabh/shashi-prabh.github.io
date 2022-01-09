@@ -697,12 +697,12 @@ video {
 
 a {
   --tw-text-opacity: 1;
-  color: rgba(29, 78, 216, var(--tw-text-opacity))
+  color: rgba(127, 29, 29, var(--tw-text-opacity))
 }
 
 a:hover {
   --tw-text-opacity: 1;
-  color: rgba(5, 150, 105, var(--tw-text-opacity));
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
 }
 
 ul {
