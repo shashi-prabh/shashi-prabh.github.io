@@ -1,0 +1,29 @@
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <button class="outline-none mobile-menu-button text-yellow-100 hover:text-white">
+      <svg class=" w-5 h-5  "
+        x-show="!showMenu"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="3"
+        viewBox="0 0 20 20"
+        stroke="currentColor"
+      >
+        <path d="M4 3h16M4 10h16M4 17h16"></path>
+      </svg>
+    </button>
+  </a>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>

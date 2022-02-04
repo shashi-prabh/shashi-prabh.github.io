@@ -1,0 +1,87 @@
+in Head:
+    <script src="./jquery3.js"></script>
+	    <script>$(function() {
+	    $("#navigation").load("navbar.html");
+	    });
+	    </script>
+
+in Body -> Header:
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation"></nav> 
+
+<div id="navigation"></div>
+
+<script src="jquery-1.12.4.js"></script>
+
+<script>$(function() {
+  $("#navigation").load("navbar_x.html");
+  });
+</script>
+
+OR
+<div id="My_Navbar"></div>
+<script id="My_Navbar" src="navbar.js"></script>
+
+where navbar.js:
+fetch('navbar.html')
+.then(res => res.text())
+.then(text => {
+    let oldelem = document.querySelector("script#My_Navbar");
+    let newelem = document.createElement("div");
+    newelem.innerHTML = text;
+    oldelem.parentNode.replaceChild(newelem,oldelem);
+})
+
+replace_text.js:
+var this_js_script = $('script[src*=replacetext]'); // or better regexp to get the file name..
+var fname = this_js_script.attr('data-fname');   
+if (typeof fname === "undefined" ) {
+   var fname = 'NULL';
+}
+alert(fname); // to view the variable value
+fetch(fname)
+.then(res => res.text())
+.then(text => {
+    let oldelem = document.querySelector("script#replace_me");
+    let newelem = document.createElement("div");
+    newelem.innerHTML = text;
+    oldelem.parentNode.replaceChild(newelem,oldelem);
+})
+
+
+In body-> header
+<nav class="navbar navbar-default navbar-fixed-top">
+  <script type="text/javascript" id="replace_me" data-fname="navbar.html" src="replacetext.js"></script>
+</nav>
+
+package.json:
+
+ "dev": "vite",
+ "buildcss": "tailwind-cli build -i css/tailwind_sty.css -o style.css",
+ "test": "echo \"Error: no test specified\" && exit 1"
+  
+npm install -D vite postcss autoprefixer tailwindcss
+npx tailwindcss init -p
+
+instead of vite: python3 -m http.server OR python3 -m http.server 7800
+
+css/tailwind_sty.css:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tailwind-cli build -i css/tailwind_sty.css -o style.css
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+	<h1 class="text-3xl font-bold underline">
+	    Hello world!
+	</h1>
+</body
+></html>

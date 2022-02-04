@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/navbar.css">
+<script src="jquery-1.12.4.js"></script>
+<!-- <script src="js/jquery.min.js"></script> -->
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <!-- <script src="js/main.js"></script> -->
+  <script>$(function() {
+    $("#navigation").load("include/navbar.html");
+    $("#jumbotron").load("include/jumbotron.html");
+    $("#footer").load("include/footer.html");
+  });</script>
+
+<!--   <script> -->
+<!-- $.get("include/navbar.html", function(data){ -->
+<!--     $("#nav-placeholder").replaceWith(data); -->
+<!-- }); -->
+<!--   </script> -->
+  <script>
+$(function(){
+  $("#nav-placeholder").load("include/navbar.html");
+});
+  </script>
+  
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style> 
+
+</head>
+<body>
+  <header>
+<!-- navigation bar -->
+<!-- <nav class="navbar navbar-default navbar-fixed-top" id="navigation"></nav> -->
+<div id="nav-placeholder"></div>
+  </header>
+
+<!-- <\!-- jumbotron content -\-> -->
+<!-- <div class="jumbotron" id="jumbotron"></div> -->
+<!-- <\!-- <script id="My_Navbar" src="navbar.js"></script> -\-> -->
+<!-- <\!-- footer information -\-> -->
+<!-- <footer id="footer"></footer> -->
+
+<!-- <\!--Navigation bar-\-> -->
+<!-- <div id="nav-placeholder"> -->
+
+<!-- <\!-- </div> -\-> -->
+
+
+<!--end of Navigation bar-->
+
+<!-- <div class="topnav" id="myTopnav"> -->
+<!--   <a href="#home" class="active">Home</a> -->
+<!--   <a href="#news">News</a> -->
+<!--   <a href="#contact">Contact</a> -->
+<!--   <a href="#about">About</a> -->
+<!--   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+<!--     <i class="fa fa-bars"></i> -->
+<!--   </a> -->
+<!-- </div> -->
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+
+<!-- <script> -->
+<!-- function myFunction() { -->
+<!--   var x = document.getElementById("myTopnav"); -->
+<!--   if (x.className === "topnav") { -->
+<!--     x.className += " responsive"; -->
+<!--   } else { -->
+<!--     x.className = "topnav"; -->
+<!--   } -->
+<!-- } -->
+<!-- </script> -->
+
+</body>
+</html>
