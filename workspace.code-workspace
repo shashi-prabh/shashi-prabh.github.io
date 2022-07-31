@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../work/research/my_papers/stat_mech_interference/cluster/mulfreqhc"
 		}
 	]
 }
