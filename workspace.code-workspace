@@ -6,5 +6,13 @@
 		{
 			"path": "../../../work/research/my_papers/stat_mech_interference/cluster/mulfreqhc"
 		}
-	]
+	],
+	"settings": {
+		"cSpell.words": [
+			"codelength",
+			"CSMA",
+			"subcarriers",
+			"submatrix"
+		]
+	}
 }
