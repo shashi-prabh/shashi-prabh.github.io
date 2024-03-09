@@ -1,5 +1,5 @@
-/* CSD 304 Computer Networks, Fall 2016
-   Lab 2, client
+/* Computer Networks
+   UDP client
    Team: 
 */
 
@@ -24,6 +24,11 @@ int main(int argc, char * argv[]){
   char buf[BUF_SIZE];
   int s;
   int len;
+  
+  /*
+  Modify the following code and use switches.
+  For example, switches I and P for IP address and Port, respectively.
+  */	
 
   if ((argc==2)||(argc == 3)) {
     host = argv[1];
@@ -78,11 +83,15 @@ int main(int argc, char * argv[]){
     return 0; 
   }
     
-  /* get reply, display it or store in a file*/ 
-  /* Add code to receive unlimited data and either display the data
-     or if specified by the user, store it in the specified file. 
-     Instead of recv(), use recvfrom() call for receiving data */
+  /* Get reply, display or store in a file.
+     The client must be able to receive data without any size limits, and either display
+     or store as specified by they user. Use a switch to implement it. */
+      
+  /* Instead of recv(), change to recvfrom() call for receiving data */
   recv(s, buf, sizeof(buf), 0);
+  
+  /* Add code here to receive a file whether binary or text. 
+  If the last 3 bytes from the server are "BYE", treat it as end of the file. */
   fputs(buf, stdout);
   
 }

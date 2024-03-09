@@ -1,5 +1,5 @@
-/* CSD 304 Computer Networks, Fall 2016
-   Lab 2, server
+/* Computer Networks
+   UDP server
    Team: 
 */
 
@@ -26,6 +26,8 @@ int main(int argc, char * argv[]){
   char *host;
   struct hostent *hp;
 
+  
+
 
   /* Declarations for file(s) to be sent 
      ...
@@ -35,8 +37,10 @@ int main(int argc, char * argv[]){
      struct timespec ... */ 
  
 
-  /* To get filename from commandline */
-  /* if (argc==...) {} */
+  
+  /* Modify the following code and use switches.
+  For example, switches P and F for IP address and a filename (if streaming), respectively.
+  */
    
    
   /* Create a socket */
