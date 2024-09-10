@@ -650,9 +650,21 @@ video {
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1920px) {
   .container {
-    max-width: 1536px;
+    max-width: 1920px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2560px;
+  }
+}
+
+@media (min-width: 2880px) {
+  .container {
+    max-width: 2880px;
   }
 }
 
@@ -7061,15 +7073,15 @@ dd {
 }
 
 .max-w-screen-lg {
-  max-width: 1024px;
-}
-
-.max-w-screen-xl {
   max-width: 1280px;
 }
 
+.max-w-screen-xl {
+  max-width: 1920px;
+}
+
 .max-w-screen-2xl {
-  max-width: 1536px;
+  max-width: 2560px;
 }
 
 .flex-1 {
