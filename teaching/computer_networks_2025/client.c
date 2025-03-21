@@ -24,7 +24,7 @@ int main(int argc, char * argv[]){
     host = argv[1];
   }
   else {
-    fprintf(stderr, "usage: %s host\n", argv[0]);
+    fprintf(stderr, "usage: %s remotehost\n", argv[0]);
     exit(1);
   }
   
