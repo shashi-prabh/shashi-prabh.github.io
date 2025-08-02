@@ -1,3 +1,55 @@
 ```mermaid
-  info
+  graph TD
+    subgraph Cloud Layer (Offline)
+        A["☁️ Offline MARL Training & Simulation Environment"]
+        B["Global Fleet Analytics"]
+    end
+
+    subgraph Edge Layer (Soft Real-Time)
+        C["User/Admin Interface (High-level Task API)"]
+        D["Task Decomposer"]
+        E["<b style='color:blue;'>MARL Centralized Critic</b><br/><i>(Calculates state value / advantage)</i>"]
+        F["<b style='color:green;'>Shared Swarm State</b><br/><i>(Agent positions, task queues, network status)</i>"]
+    end
+
+    subgraph Communication Fabric
+        G["TSN / 5G URLLC / IP Network<br/><i>(QoS-aware)</i>"]
+    end
+
+    subgraph Device Layer (Decentralized Agents - Hard Real-Time for Control)
+        H1["🤖 Agent 1"]
+        H2["🤖 Agent 2"]
+        H3["🤖 Agent N..."]
+    end
+
+    subgraph Agent Internals
+        I["<b style='color:blue;'>MARL Decentralized Actor</b><br/><i>(Local Policy Network)</i>"]
+        J["On-Device Real-Time Controller<br/><i>(Motor control, safety loops)</i>"]
+        K["Sensors & Actuators"]
+    end
+
+    %% Data and Control Flows
+    A -- "Trained Actor & Critic Models" --> E
+    A -- "Trained Actor Models" --> I
+
+    C --> D
+    D -- "Sub-tasks & Goals" --> F
+
+    F -- "Global State" --> E
+    E -- "Guidance / Value Function" --> G
+
+    G -- "Guidance / Value Function" --> I
+    I -- "State Updates & Local Observations" --> G
+    G -- "State Updates & Local Observations" --> F
+
+    I -- "High-level Action<br/>(e.g., 'move to x,y')" --> J
+    K -- "Sensor Data / Local Observation" --> I
+    J -- "Low-level Commands" --> K
+    K -- "Physical Interaction" --> World(Physical Environment)
+
+
+    %% Grouping Agent Internals
+    H1 --> I; H1 --> J; H1 --> K
+    H2 --> I; H2 --> J; H2 --> K
+    H3 --> I; H3 --> J; H3 --> K
 ```
