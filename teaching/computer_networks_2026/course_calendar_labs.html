@@ -40,18 +40,19 @@
             <nav class="navbar navbar-default navbar-fixed-top" id="navigation"></nav>
             <a href="../computer_networks_2026.html" class="ml-8">Go To Course Main Page</a>
             <a href="./course_calendar.html" class="ml-8">Go To Course Calendar - Lectures</a>
-    
+
         </header>
         <div class="bg-white">
             <div class="pagetitle">
-                <h1><strong>Computer Networks, Winter 2026</strong></h1>
+                <h1><strong>Computer Networks, Spring 2026</strong></h1>
                 <h5 class="text-base">Course Calendar - Labs</h5>
-                <h2>Come back later. Page under construction!</h2>
             </div>
             <!-- <div class="headertext mt-2">Lectures</div> -->
-            
+
             <div class="m-2 py-2">
                 <table>
+
+                    
                     <tr>
                         <td><b>Lab</b></td>
                         <td><b>Topics</b></td>
@@ -59,87 +60,114 @@
                         <td><b>Dates</b></td>
                         <td><b>Reference</b></td>
                     </tr>
+                    
+                    <tr>
+                        <td>0</td>
+                        <td>C review</td>
+                        <td><a href="./lab0.pdf">Lab 0 instructions</a></td>
+                        <td>5/1</td>
+                        <td>
+                            <a href="./command_line_arguments.c">command_line_arguments.c</a>,
+                            <a href="./sample.txt">sample.txt</a>
+                        </td>
+                    </tr>
+
                     <tr>
                         <td>1</td>
                         <td>Introduction, familiarity with ethernet</td>
                         <td>Lab 1 instructions</td>
-                        <td>17/1</td>
+                        <td>12/1</td>
                         <td></td>
                     </tr>
+                    
                     <tr>
                         <td>2</td>
-                        <td>Networking using patch/cross cable and WiFi, file transfer, IP address, performance measurement</td>
-                        <td><a href="./lab2.pdf">Lab 2 instructions</a></td>
-                        <td>24/1</td>
+                        <td>Networking setup, file transfer, and ARP/DHCP exploration</td>
+                        <td>Lab 2 instructions</td>
+                        <td>19/1</td>
                         <td></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>3</td>
-                        <td>C review</td>
-                        <td><a href="./lab3.pdf">Lab 3 instructions</a></td>
-                        <td>31/1</td>
-                        <td>
-                            <a href="./command_line_arguments.c">command_line_arguments.c</a>, 
-                            <a href="./sample.txt">sample.txt</a>
-                        </td>
-                    </tr>
-                    
-                    
-                     <tr>
-                        <td>4</td>
-                        <td>Tools: Wireshark, UNIX Tools</td>
-                        <td><a href="./lab4.pdf">Lab 4 instructions</a></td>
-                        <td>7/2</td>
-                        <td> 
-                            <a href="https://www.wireshark.org/">Wireshark</a></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Introduction to socket API, transfer of files over network</td>
-                        <td><a href=./lab5.pdf>Lab 5 instructions</a></td>
-                        <td>14/2 - 21/2</td>
-                        <td><a href="http://beej.us/guide/bgnet/">Beej guide to network programming</a></br>
-                        <a href="./server.c">server.c</a>, <a href="./client.c">client.c</a></td>
                     </tr>
 
                     <tr>
-                        <td>6</td>
-                        <td>Transfer of audio/video files over UDP</td>
+                        <td>4</td>
+                        <td>Tools: Wireshark, UNIX Tools</td>
+                        <td>Lab 4 instructions</td>
+                        <td>2/2</td>
                         <td>
-                            <a href="./lab6.pdf">Lab 6 instructions</a>
+                            <a href="https://www.wireshark.org/">Wireshark</a>
                         </td>
-                        <td>28/2 - 13/3</td>
-                        <td><a href="./client_udp.c">Client code,</a>
-                            <a href="./server_udp.c">Server code</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>DNS deep-dive: dig, nslookup, resolution tracing</td>
+                        <td>Lab 5 instructions</td>
+                        <td>9/2</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Introduction to socket API: TCP basics; Quiz</td>
+                        <td>Lab 6 instructions</td>
+                        <td>16/2</td>
+                        <td><a href="http://beej.us/guide/bgnet/">Beej guide to network programming</a></br>
+                            <a href="./server.c">server.c</a>, <a href="./client.c">client.c</a>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>7</td>
-                        <td>Reliable data transfer over UDP</td>
-                        <td><a href="./lab7.pdf">Lab 7 instructions </a></a></td>
-                        <td>20/3, 27/3</td>
+                        <td>TCP File Transfer</td>
+                        <td>Lab 7 instructions</td>
+                        <td>2/3, 9/3</td>
+                        <td>Building on Lab 6</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>UDP audio/video streaming</td>
+                        <td>Lab 8 instructions
+                        </td>
+                        <td>16/3, 23/3</td>
+                        <td><a href="./client_udp.c">Client code,</a>
+                            <a href="./server_udp.c">Server code</a>
+                            <a href="./chrome.mp4">chrome.mp4</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>Reliable data transfer over UDP (Capstone)</td>
+                        <td>Lab 9 instructions</td>
+                        <td>30/3, 6/4</td>
                         <td></td>
                     </tr>
 
-                    <!--<tr>
-                        <td>9</td>
-                        <td>Real-time multimedia streaming</td>
-                        <td>Implement the tasks specified in the code</td>
-                        <td>3/4</td>
-                        <td><a href="./rtsp_testserver.py">GStreamer-based RTSP Server</a></br>
-                            <a href="./chrome.mp4">Test video</a></td>
+                    <tr>
+                        <td>10</td>
+                        <td>Revision / Problems</td>
+                        <td></td>
+                        <td>13/4</td>
+                        <td></td>
                     </tr>
+                    
                     <tr>
                         <td>11</td>
-                        <td>Lab Exam</td>
+                        <td><b>Project: SDN with Mininet</b></td>
+                        <td>Project specification</td>
+                        <td>Due: 20/4</td>
+                        <td>Individual or Team project</td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td><b>Lab Exam</b></td>
                         <td></td>
-                        <td>10/4</td>
-                        <td></td>
-                    </tr> -->
+                        <td>20/4</td>
+                        <td>In-lab assessment</td>
+                    </tr>
                 </table>
             </div>
-           
+
         </div>
     </div>
 
